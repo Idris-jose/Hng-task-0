@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+      body {
+        font-family: "Poppins", sans-serif;
+        background-color: rgb(34, 50, 139);
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      article {
+        max-width: 400px;
+        width: 90%;
+        margin: auto;
+        padding: 2rem 1.5rem;
+        border-radius: 16px;
+        background-color: #fff;
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        color: #272727;
+      }
+
+      #pfp {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        border: 3px solid rgb(42, 65, 165);
+        object-fit: cover;
+        margin-bottom: 1rem;
+      }
+
+      #header {
+        color: rgb(42, 65, 165);
+        margin-bottom: 0.5rem;
+      }
+
+      p {
+        margin: 0.5rem 0;
+        font-size: 0.95rem;
+      }
+
+      #time {
+        font-size: 0.85rem;
+        color: #666;
+      }
+
+      nav ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        gap: 1.2rem;
+        margin-top: 1rem;
+      }
+
+      nav a {
+        text-decoration: none;
+        color: rgb(42, 65, 165);
+        font-weight: 500;
+        transition: color 0.2s ease;
+      }
+
+      nav a:hover {
+        color: rgb(30, 50, 130);
+        text-decoration: underline;
+      }
+
+      section {
+        margin-top: 1.5rem;
+        text-align: left;
+      }
+
+      section h3 {
+        color: rgb(42, 65, 165);
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+      }
+
+      section ul {
+        list-style: disc;
+        padding-left: 1.2rem;
+        margin: 0;
+      }
+
+      section li {
+        margin: 0.3rem 0;
+        font-size: 0.9rem;
+      }
+    

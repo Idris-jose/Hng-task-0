@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jose Idris | Profile Card</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <article data-testid="test-profile-card">
+      <figure>
+        <img
+          id="pfp"
+          src="/pfp.jpg"
+          alt="Profile picture of Jose Idris"
+          data-testid="test-user-avatar"
+        />
+      </figure>
+
+      <header>
+        <h2 id="header" data-testid="test-user-name">Jose Idris</h2>
+      </header>
+
+      <p data-testid="test-user-bio">
+        Frontend developer passionate about React, design systems, and accessibility.
+      </p>
+
+      <p data-testid="test-user-time" id="time"></p>
+
+      <nav data-testid="test-user-social-links">
+        <ul>
+          <li>
+            <a
+              href="https://github.com/joseidris"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-testid="test-user-social-github"
+              >GitHub</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://twitter.com/joseidris"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-testid="test-user-social-twitter"
+              >Twitter</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <section>
+        <h3>Hobbies</h3>
+        <ul data-testid="test-user-hobbies">
+          <li>Coding</li>
+          <li>UI Design</li>
+          <li>Football</li>
+        </ul>
+      </section>
+
+      <section>
+        <h3>Dislikes</h3>
+        <ul data-testid="test-user-dislikes">
+          <li>Slow Wi-Fi</li>
+          <li>Messy code</li>
+        </ul>
+      </section>
+    </article>
+
+    <script>
+      document.getElementById("time").innerText =Date.now();
+
+    </script>
+  </body>
+</html>
