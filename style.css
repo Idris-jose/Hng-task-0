@@ -13,7 +13,7 @@
       }
 
       article {
-        max-width: 400px;
+        max-width: 800px;
         width: 90%;
         margin: auto;
         padding: 2rem 1.5rem;
@@ -22,6 +22,27 @@
         box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
         text-align: center;
         color: #272727;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      @media (min-width: 768px) {
+        article {
+          flex-direction: row;
+          text-align: left;
+          padding: 2rem;
+        }
+
+        figure {
+          flex-shrink: 0;
+          margin-right: 2rem;
+          margin-bottom: 0;
+        }
+
+        .profile-content {
+          flex: 1;
+        }
       }
 
       #pfp {
@@ -57,6 +78,12 @@
         margin-top: 1rem;
       }
 
+      @media (min-width: 768px) {
+        nav ul {
+          justify-content: flex-start;
+        }
+      }
+
       nav a {
         text-decoration: none;
         color: rgb(42, 65, 165);
@@ -67,6 +94,11 @@
       nav a:hover {
         color: rgb(30, 50, 130);
         text-decoration: underline;
+      }
+
+      nav a:focus {
+        outline: 2px solid rgb(42, 65, 165);
+        outline-offset: 2px;
       }
 
       section {
